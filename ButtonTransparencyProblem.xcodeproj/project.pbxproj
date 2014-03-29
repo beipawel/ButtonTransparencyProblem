@@ -18,6 +18,9 @@
 		E51D969C18E7121D00A8727D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51D967B18E7121D00A8727D /* Cocoa.framework */; };
 		E51D96A418E7121D00A8727D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E51D96A218E7121D00A8727D /* InfoPlist.strings */; };
 		E51D96A618E7121D00A8727D /* ButtonTransparencyProblemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E51D96A518E7121D00A8727D /* ButtonTransparencyProblemTests.m */; };
+		E51D96B018E714E400A8727D /* viewbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E51D96AF18E714E400A8727D /* viewbg.png */; };
+		E51D96B318E715B400A8727D /* BPView.m in Sources */ = {isa = PBXBuildFile; fileRef = E51D96B218E715B400A8727D /* BPView.m */; };
+		E51D96B518E71AAE00A8727D /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E51D96B418E71AAE00A8727D /* buttonbg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		E51D96A118E7121D00A8727D /* ButtonTransparencyProblemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ButtonTransparencyProblemTests-Info.plist"; sourceTree = "<group>"; };
 		E51D96A318E7121D00A8727D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E51D96A518E7121D00A8727D /* ButtonTransparencyProblemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTransparencyProblemTests.m; sourceTree = "<group>"; };
+		E51D96AF18E714E400A8727D /* viewbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewbg.png; sourceTree = "<group>"; };
+		E51D96B118E715B400A8727D /* BPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPView.h; sourceTree = "<group>"; };
+		E51D96B218E715B400A8727D /* BPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPView.m; sourceTree = "<group>"; };
+		E51D96B418E71AAE00A8727D /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +122,12 @@
 		E51D968118E7121D00A8727D /* ButtonTransparencyProblem */ = {
 			isa = PBXGroup;
 			children = (
+				E51D96AF18E714E400A8727D /* viewbg.png */,
+				E51D96B418E71AAE00A8727D /* buttonbg.png */,
 				E51D968D18E7121D00A8727D /* BPAppDelegate.h */,
 				E51D968E18E7121D00A8727D /* BPAppDelegate.m */,
+				E51D96B118E715B400A8727D /* BPView.h */,
+				E51D96B218E715B400A8727D /* BPView.m */,
 				E51D969018E7121D00A8727D /* MainMenu.xib */,
 				E51D969318E7121D00A8727D /* Images.xcassets */,
 				E51D968218E7121D00A8727D /* Supporting Files */,
@@ -231,9 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51D96B518E71AAE00A8727D /* buttonbg.png in Resources */,
 				E51D968618E7121D00A8727D /* InfoPlist.strings in Resources */,
 				E51D969418E7121D00A8727D /* Images.xcassets in Resources */,
 				E51D968C18E7121D00A8727D /* Credits.rtf in Resources */,
+				E51D96B018E714E400A8727D /* viewbg.png in Resources */,
 				E51D969218E7121D00A8727D /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +268,7 @@
 			files = (
 				E51D968F18E7121D00A8727D /* BPAppDelegate.m in Sources */,
 				E51D968818E7121D00A8727D /* main.m in Sources */,
+				E51D96B318E715B400A8727D /* BPView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

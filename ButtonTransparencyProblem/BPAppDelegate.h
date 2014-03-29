@@ -7,9 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class BPView;
 
 @interface BPAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSView *view;
+@property (weak) IBOutlet BPView *customView;
+
+@property (weak) IBOutlet NSButton *button;
 
 @end

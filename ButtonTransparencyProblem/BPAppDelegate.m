@@ -7,12 +7,14 @@
 //
 
 #import "BPAppDelegate.h"
+#import "BPView.h"
 
 @implementation BPAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    NSImage* buttonbg = [NSImage imageNamed:@"buttonbg.png"];
+    [self.button setImage:buttonbg];
 }
 
 @end

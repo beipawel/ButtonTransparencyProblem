@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5023"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -13,6 +13,9 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="BPAppDelegate">
             <connections>
+                <outlet property="button" destination="c6u-FW-CW3" id="Frb-Rq-JEM"/>
+                <outlet property="customView" destination="g4k-4a-AhL" id="VLv-pI-J5S"/>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="b0U-NG-GI8"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -669,11 +672,27 @@
         <window title="ButtonTransparencyProblem" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="contentRect" x="335" y="390" width="400" height="100"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4k-4a-AhL" customClass="BPView">
+                        <rect key="frame" x="0.0" y="10" width="400" height="80"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-FW-CW3">
+                                <rect key="frame" x="158" y="0.0" width="84" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="1It-iV-1zc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </customView>
+                </subviews>
             </view>
         </window>
     </objects>
