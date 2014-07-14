@@ -21,6 +21,7 @@
 		E51D96B018E714E400A8727D /* viewbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E51D96AF18E714E400A8727D /* viewbg.png */; };
 		E51D96B318E715B400A8727D /* BPView.m in Sources */ = {isa = PBXBuildFile; fileRef = E51D96B218E715B400A8727D /* BPView.m */; };
 		E51D96B518E71AAE00A8727D /* buttonbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E51D96B418E71AAE00A8727D /* buttonbg.png */; };
+		E59E81241974041800367678 /* BPButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = E59E81231974041800367678 /* BPButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		E51D96B118E715B400A8727D /* BPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPView.h; sourceTree = "<group>"; };
 		E51D96B218E715B400A8727D /* BPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPView.m; sourceTree = "<group>"; };
 		E51D96B418E71AAE00A8727D /* buttonbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbg.png; sourceTree = "<group>"; };
+		E59E81221974041800367678 /* BPButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPButtonView.h; sourceTree = "<group>"; };
+		E59E81231974041800367678 /* BPButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPButtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				E51D96B418E71AAE00A8727D /* buttonbg.png */,
 				E51D968D18E7121D00A8727D /* BPAppDelegate.h */,
 				E51D968E18E7121D00A8727D /* BPAppDelegate.m */,
+				E59E81221974041800367678 /* BPButtonView.h */,
+				E59E81231974041800367678 /* BPButtonView.m */,
 				E51D96B118E715B400A8727D /* BPView.h */,
 				E51D96B218E715B400A8727D /* BPView.m */,
 				E51D969018E7121D00A8727D /* MainMenu.xib */,
@@ -268,6 +273,7 @@
 			files = (
 				E51D968F18E7121D00A8727D /* BPAppDelegate.m in Sources */,
 				E51D968818E7121D00A8727D /* main.m in Sources */,
+				E59E81241974041800367678 /* BPButtonView.m in Sources */,
 				E51D96B318E715B400A8727D /* BPView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +487,7 @@
 				E51D96AB18E7121E00A8727D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E51D96AC18E7121E00A8727D /* Build configuration list for PBXNativeTarget "ButtonTransparencyProblemTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +496,7 @@
 				E51D96AE18E7121E00A8727D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

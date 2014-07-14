@@ -13,8 +13,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    NSImage* buttonbg = [NSImage imageNamed:@"buttonbg.png"];
-    [self.button setImage:buttonbg];
+//    NSImage* buttonbg = [NSImage imageNamed:@"buttonbg.png"];
+//    [[self.button cell] setBackgroundColor:[NSColor clearColor]];
+//    [self.button setImage:buttonbg];
 }
 
 @end
